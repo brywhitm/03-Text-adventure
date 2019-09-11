@@ -24,6 +24,7 @@ def check_input():
 
 def update():
     #Check if we need to move to a new location, ect.
+    return True
 
 def main():
     game = {}
