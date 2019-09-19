@@ -1,2 +1,5 @@
 # 03-Text-adventure
 First Large Project. Creating a Text Adventure
+
+Bryce Whitmer 9/18/2019
+Using tkinter a built in modual for python I make a gui. The gui is simple and has some buttons that when presses send and event to a def and triger it to go off practicly making the loop with button presses. The verb is reseved by the buttons name which is then cheched and then the map updated the current based on the verb. It took a while to remake the code in a way I could use for buttons on a gui vs a typed input. The gui's text box doesnt allow input but can be modified. I can disable mod to the text but it causes problems down the line same with telling the user they cannot go that way. I just removed the code needed to tell you, you cant go that way and made it just repeat. If you didnt get the map the first time its Riverwood from skyrim. :P thought I would see if anyone knew before reading this descriptive readme. The code did take a long time because I was trying to use the given code as much as posible but latter gave up and it made it a lot easier. Read comments if you want info on the code.

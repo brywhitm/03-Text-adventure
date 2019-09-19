@@ -1,80 +1,368 @@
 {
-    "verbs": [
-      {
-        "v": "EXITS",
-        "map": "EXITS"
-      },
-      {
-        "v": "QUIT",
-        "map": "QUIT"
-      },
-      {
-        "v": "NORTH",
-        "map": "NORTH"
-      },
-      {
-        "v": "N",
-        "map": "NORTH"
-      },
-      {
-        "v": "SOUTH",
-        "map": "SOUTH"
-      },
-      {
-        "v": "S",
-        "map": "SOUTH"
-      },
-      {
-        "v": "EAST",
-        "map": "EAST"
-      },
-      {
-        "v": "E",
-        "map": "EAST"
-      },
-      {
-        "v": "WEST",
-        "map": "WEST"
-      },
-      {
-        "v": "W",
-        "map": "WEST"
-      }
-    ],
-    "rooms": {
-      "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
-        "exits": [
-          {
-            "verb": "NORTH",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "SOUTH",
-            "target": "LOC32",
-            "condition": ""
-          },
-          {
-            "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
-            "condition": ""
-          }
-        ],
-        "inventory": []
-      },
-      "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
-        "exits": [
-        ],
-        "inventory": []
-      }
+  "verbs": [
+    {
+      "v": "EXITS",   "map": "EXITS"},
+    {"v": "QUIT",     "map": "QUIT"},
+    {"v": "NORTH",    "map": "NORTH"},
+    {"v": "N",        "map": "NORTH"},
+    {"v": "SOUTH",    "map": "SOUTH"},
+    {"v": "S",        "map": "SOUTH"},
+    {"v": "EAST",     "map": "EAST"},
+    {"v": "E",        "map": "EAST"},
+    {"v": "WEST",     "map": "WEST"},
+    {"v": "Start",    "map": ""}
+  ],
+  "rooms": {
+    "Your House": {
+      "name": "Starting place",
+      "desc": "This is your house.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the dirt road",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "Faendal's House",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the dirt road": {
+      "name": "Starting place",
+      "desc": "This is the dirt road that leads from the center of town to the eastern wall.",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "the center of town",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "the town's eastern wall",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "Your House",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "Faendal's House": {
+      "name": "Starting place",
+      "desc": "This is Faendal's house, he is the local archer and owns an archery range near the mill.",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "Your House",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the center of town": {
+      "name": "Starting place",
+      "desc": "The center of town was made around the main road leading in and out of the town.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the local inn",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the town's shopping district",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "the lumber yard",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "the dirt road",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the local inn": {
+      "name": "Starting place",
+      "desc": "The Sleeping Giants Inn is a cozy inn owned by Delphine and Orgnar. It is a place for travelers to sleep and a place to get a bite to eat.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the town's northern wall",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the center of town",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the town's shopping district": {
+      "name": "Starting place",
+      "desc": "The shopping district is more like two places to by goods. The buildings are both homes and shops. Along the river is Alvor and Sigrid's house which is also the towns blacksmith, and across the street is Lucan's house were he runs his trading business.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the center of town",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "Sven and Hilde's House",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "Sven and Hilde's House": {
+      "name": "Starting place",
+      "desc": "Sven is the local bard and works at the Sleeping Giants Inn but he still lives with his mother, Hilde.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the town's shopping district",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the town's southern wall",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the town's southern wall": {
+      "name": "Starting place",
+      "desc": "The southern wall has a guard camp and the main road runs though it.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "Sven and Hilde's House",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "the archery range",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the archery range": {
+      "name": "Starting place",
+      "desc": "The archery range is ran by Faendal and he provides archery lessons here.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the town's lumber mill",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "the town's southern wall",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the town's lumber mill": {
+      "name": "Starting place",
+      "desc": "The lumber mill is the towns main source of income and Hod and Gerdur have ran it sense the town was first built. It uses the river to power a large saw blade that cut the lumber.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "the lumber yard",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the archery range",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the lumber yard": {
+      "name": "Starting place",
+      "desc": "This is simply were all of the milled wood goes for storage and for sale.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the town's lumber mill",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "the center of town",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the town's northern wall": {
+      "name": "Starting place",
+      "desc": "The northern wall is just simply a wall with the main road running though it.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "the local inn",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "the town's eastern wall": {
+      "name": "Starting place",
+      "desc": "The eastern wall open up to a small path that leads up the mountainside.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "the dirt road",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
     }
   }
+}
