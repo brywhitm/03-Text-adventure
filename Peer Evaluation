@@ -1,0 +1,37 @@
+Name: Dietrich Sears
+Date: 9/27/19
+Project: Text Adventure
+Peer's repository:  https://github.com/brywhitm/03-Text-adventure.git 
+
+
+
+What is something you learned by reviewing your peer's project? 
+I learned that there are many different approaches to designing a text adventure game. My thinking was rather one dimensional when completing this assignment while this project goes beyond to add interesting visuals to accompany the text. This makes everything that much more interesting and engaging. 
+
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+I would like to learn how to use programs to add interactivity and buttons to an image. Also, I would like to apply the idea of the user navigating a map, which I think is really cool and fun.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+The code works well but the game may be more interesting if the player had a specfic goal in mind like finding a specific person or location. While I was exploring the town I felt like I needed to have a purpose or something I was trying to accomplish, obviously that would be included in the future as this was a basic test of the coding skills needed to physically make a text adventure game. 
+ 
+
+What could have been clearer or better commented?
+I was lost for a short time becasue I didn't realize you needed to scroll down to access the next step in the adventure. I realize this is in the instructions but I at first thought it wasn't letting me advance through.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+Yes. I am unfamiliar with the tkinter system and the code was very complex to my eyes. I believe the most confusing part was assigning the specific buttons on screen to actions in the game.
+
+Does the repository contain an appropriate LICENSE?
+Yes.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+The readme is very discriptive and informs the reader a lot about the process of writing the code. Make sure everything is spelled right because VS code doesn't check for you. A lot of it was confusing to me since I'm not familiar with the programs that were used, so all the description you can give helps us naive people understand :)
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+This was a lot more complex and advanced than I could do myself and I'm very impressed with your coding knowledge. I loved the map and the setting of the adventure and I liked how you let the user click buttons to navigate through, very cool!
